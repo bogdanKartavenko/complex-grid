@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    padding: 96px 136px 159px 136px;
+    max-width: 1366px;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 343px 343px 343px;
+    grid-template-rows: 400px 274px 279px 163px 279px 217px 338px 136px 312px 130px;
+    justify-content: center;
+    gap: 32px;
+}
+
+.title {
+    color: #111827;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.card {
+    position: relative;
+    border-radius: 24px;
+    padding: 32px;
+    cursor: pointer;
+}
+
+.card_box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+}
+.card:hover {
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+.card:hover .card_box {
+    opacity: 100;
+    transition: opacity .2s ease;
+    
+}
+
+.card:nth-of-type(1) {
+    background-image: url(img/BG_1.png);
+    background-size: cover;
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+.card:nth-of-type(2) {
+    background-image: url(img/BG_2.png);
+    background-size: cover;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.card:nth-of-type(3) {
+    background-image: url(img/BG_8.png);
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+.card:nth-of-type(4) {
+    background-image: url(img/BG_3.png);
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+
+.card:nth-of-type(5) {
+    background: url(img/BG_4.png) center;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 5/8;
+}
+
+.card:nth-of-type(6) {
+    background-image: url(img/BG_5.png);
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 7/9;
+}
+
+.card:nth-of-type(7) {
+    background-image: url(img/BG_6.png);
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 8/10;
+
+}
+
+.card:nth-of-type(8) {
+    background-image: url(img/BG_7.png);
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 9/11;
+}
+
+.img-border {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img_wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.card-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+/* .shadow {
+    background-color:black;
+    z-index: 100;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+} */
