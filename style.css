@@ -40,7 +40,7 @@
     justify-content: space-between;
     opacity: 0;
 }
-.card:hover {
+.card_box:hover {
     background-color: rgba(0,0,0,0.5);
     opacity: 0.9;
     width: 100%;
